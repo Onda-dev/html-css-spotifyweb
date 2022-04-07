@@ -60,6 +60,7 @@ button {
     left: 0;
     display: flex;
     justify-content: space-between;
+
 }
 
 .logo-box, .header-button-box {
@@ -92,7 +93,7 @@ main {
 /* SIDE BAR */
 .side-bar {
     width: 220px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,8 +142,18 @@ main {
     color: white;
 }
 
+.side-bar-nav {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
 .playlist-nav {
+    height: calc(100% - 110px);
+}
+
+.playlist-nav nav{
     overflow-y: auto;
+    height: calc(100% - 60px);
 }
 
 .side-bar hr {
@@ -167,7 +178,7 @@ main h2 {
 
 .product-grid {
     width: calc(100vw - 220px);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     background-color: rgb(24, 24, 24);
     overflow-y: auto;
     padding: 100px 20px;
@@ -243,8 +254,105 @@ main h2 {
 /*--------------
     FOOTER
 ---------------*/
-.footer-bar {
+/* COMMONS */
+footer {
     width: 100%;
-    height: 80px;
-    background-color: violet;
+    height: 100px;
+    display: flex;
+    padding: 0 10px 10px 10px;
+    background-color: rgb(46, 46, 46);
+}
+
+/* PRIMA COLONNA */
+.listening, .footer-settings {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.player {
+    width: 50%;
+    height: 100%;
+    /* background-color: violet; */
+}
+
+.small-cover {
+    width: 50px;
+    height: 50px;
+    /* background-color: violet; */
+    margin-right: 10px;
+}
+
+.band-name {
+    color: white;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+.track-name {
+    color: grey;
+    font-weight: 700;
+    font-size: 0.6em;
+}
+
+.fav-icons {
+    color: grey;
+    display: flex;
+    gap: 12px;
+    margin-left: 30px;
+}
+
+/* COLONNA CENTRALE */
+.player {
+    padding: ;
+}
+
+.player-row {
+    width: 100%;
+    height: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2em;
+    /* background-color: aqua; */
+    padding: 0 10px;
+}
+
+.player-button:nth-child(3) {
+    font-size: 1.6em;
+}
+
+.track-time {
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+.control-bar {
+    width: 70%;
+    height: 6px;
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.control-bar-current {
+    width: 20%;
+    height: 6px;
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+/* TERZA COLONNA */
+.footer-settings {
+    color: grey;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.footer-settings .control-bar {
+    width: 40%;
 }
