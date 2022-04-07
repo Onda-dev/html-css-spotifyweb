@@ -143,13 +143,15 @@ main {
     position: relative;
 }
 
-.main-nav nav ul li:first-child::before {
-    content: "";
-    display: block;
+.active {
+    position: relative;
+}
+.lime-bar {
     height: 34px;
     width: 4px;
     background-color: lime;
     position: absolute;
+    left: -10px;
 }
 
 .side-bar-nav {
