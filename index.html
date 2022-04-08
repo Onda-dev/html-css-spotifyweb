@@ -17,7 +17,8 @@
         <header>
             <div class="header-bar">
                 <div class="logo-box">
-                    <a href="#"><img src="img/logo.svg" alt=""></a>
+                    <a href="#" class="big-logo"><img src="img/logo.svg" alt=""></a>
+                    <a href="#" class="small-logo"><img src="img/logo-small.svg" alt=""></a>
                 </div>
                 <div class="header-button-box">
                     <button type="button" class="header-button">effettua l'upgrade</button>
@@ -34,14 +35,17 @@
                                 <li>
                                     <a href="#" class="active">
                                         <div class="lime-bar"></div>
-                                        <span class="side-bar-icon"><i class="fa-solid fa-house"></i></span>Home
+                                        <span class="side-bar-icon"><i class="fa-solid fa-house"></i></span>
+                                        <span class="li-text">Home</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href=""><span class="side-bar-icon"><i class="fa-solid fa-magnifying-glass"></i></span>Cerca</a>
+                                    <a href=""><span class="side-bar-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                    <span class="li-text">Cerca</span></a>
                                 </li>
                                 <li>
-                                    <a href=""><span class="side-bar-icon"><i class="fa-solid fa-bookmark"></i></span> La tua libreria</a>
+                                    <a href=""><span class="side-bar-icon"><i class="fa-solid fa-bookmark"></i></span> 
+                                    <span class="li-text">La tua libreria</span></a>
                                 </li>
                             </ul>
                         </nav>
@@ -80,13 +84,17 @@
 
                 <div class="side-bar-user">
                     <div>
-                        <a href="#"><span><i class="fa-solid fa-circle-arrow-down"></i></span> Installa app</a>
+                        <a href="#">
+                            <span class="side-bar-icon"><i class="fa-solid fa-circle-arrow-down"></i></span>
+                            <span class="icon-text">Installa app</span></a>
                     </div>
 
                     <hr>
 
                     <div class="current-user">
-                        <a href="#"><span class="side-bar-icon"><i class="fa-solid fa-user"></i></span> John Doe</a>
+                        <a href="#">
+                            <span class="side-bar-icon"><i class="fa-solid fa-user"></i></span>
+                            <div class="icon-text">John Doe</div></a>
                     </div>
                 </div>
             </div>
@@ -275,13 +283,20 @@
 
             <div class="listening"> <!-- PRIMA COLONNA -->
 
-                <div class="small-cover">
-                    <img src="img/sinister.jpeg" alt="">
-                </div>
                 <div class="listening-info">
-                    <div class="band-name"><a href="#">Sinister</a></div>
-                    <div class="track-name">Brano nome</div>
+                    <div class="small-cover">
+                        <img src="img/sinister.jpeg" alt="">
+                    </div>
+
+                    <div class="band-name">
+                        <a href="#">Sinister</a>
+                        <div class="track-name">
+                            <a href="#">Brano nome</a>
+                        </div>
+                    </div>
                 </div>
+
+
                 <div class="fav-icons">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
@@ -310,8 +325,8 @@
 
             <div class="footer-settings"> <!-- TERZA COLONNA -->
  
-                <button type="button"><i class="fa-solid fa-bars"></i></button>
-                <button type="button"><i class="fa-solid fa-display"></i></button>
+                <button type="button" class="footer-settings-button"><i class="fa-solid fa-bars"></i></button>
+                <button type="button" class="footer-settings-button"><i class="fa-solid fa-display"></i></button>
                 <button type="button"><i class="fa-solid fa-volume-high"></i></button>
                 <div class="control-bar">
                     <div class="control-bar-current"></div>
